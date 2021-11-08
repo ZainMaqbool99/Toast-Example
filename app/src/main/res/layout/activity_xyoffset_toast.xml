@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".XYoffsetToast">
+
+    <TableRow
+        android:id="@+id/tblRow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/xLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X offSet:">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtX"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:text="0">
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tblRow2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/yLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y offSet:">
+        </TextView>
+
+        <EditText
+            android:id="@+id/txtY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:inputType="numberSigned">
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tblRow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Toast"
+            android:layout_span="2">
+        </Button>
+    </TableRow>
+</TableLayout>
